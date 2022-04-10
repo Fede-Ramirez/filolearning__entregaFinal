@@ -101,6 +101,13 @@ main{grid-area: main;}
 	margin: 0px 0px 50px 0px;
 }
 
+.section3__frase{
+	color: beige;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 1px 2px 1px black;
+}
+
 .economico{grid-area: economico;}
 
 .seguimiento{grid-area: seguimiento;}
@@ -115,6 +122,14 @@ main{grid-area: main;}
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contacto__texto{
+	text-align: center;
+}
+
+.redes__texto{
+	text-align: center;
 }
 
 .redes{
@@ -151,6 +166,10 @@ main{grid-area: main;}
 	margin-left: 2px;
 	font-weight: bold;
 	color: black;
+}
+
+.copyright__texto{
+	text-transform: capitalize;
 }
 
 // Estilos generales ACERCA DE MÍ
