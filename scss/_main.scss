@@ -6,86 +6,78 @@
     "header"
     "main"
     "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  header{
+  	nav{
+  		.header__nav{
+	       border-top: 4px solid brown;
+	       border-bottom: 4px solid brown;
+	       padding: 15px 15px 15px 0px;
+	       margin-right: 50px;
+	       .nav__item{
+	          display: inline;
+	          .nav__anchor{
+	             color: lightslategrey;
+	             text-transform: uppercase;
+	             font-weight: bold;
+            }
+          }
+        }
+      .logo__filolearning{
+	       grid-area: logo__filolearning;
+	       display: flex;
+	       flex-direction: column;
+	       .logo__anchor{
+	         display: flex;
+	         flex-direction: row;
+	         justify-content: center;
+	         align-items: center;
+	         .tipografiaLogo{
+	            font-family: $logoFont;
+	            font-weight: bold;
+	            font-style: italic;
+	            color: black;
+	            .logo__nombre{
+	              color:crimson;
+	              font-family: $logoFont;
+	              font-weight: bold;
+	              font-style: italic;
+              }
+            }
+          }
+        }
+  	  }
+    }
+    .main{
+	    background-color: #f2f2f2;
+	    display: grid;
+	    grid-template-areas: 
+        "main__section1"
+        "main__section2"
+        "main__section3";
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      .main__section1{
+        .section1__h1{
+	        text-align: center;
+	        text-shadow: 1px 2px 1px black;
+	        color: beige;
+        }
+      }
+      .main__section2{
+	      grid-area: main__section2;
+	      margin-bottom: 75px;
+      }
+    }    
 }
 
 header{grid-area: header;}
 
 main{grid-area: main;}
 
-.header__nav{
-	border-top: 4px solid brown;
-	border-bottom: 4px solid brown;
-	padding: 15px 15px 15px 0px;
-	margin-right: 50px;
-}
-
-.nav__item{
-	display: inline;
-}
-
-.nav__anchor{
-	color: lightslategrey;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.icono__palabra{
-	font-weight: bold;
-}
-
-.logo__filolearning{
-	grid-area: logo__filolearning;
-	display: flex;
-	flex-direction: column;
-}
-
-.tipografiaLogo{
-	font-family: $logoFont;
-	font-weight: bold;
-	font-style: italic;
-	color: black;
-}
-
-.logo__anchor{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
 .logo__anchor:hover{
   text-decoration: none;
-}
-
-.logo__nombre{
-	color:crimson;
-	font-family: "cormorant upright", Serif;
-	font-weight: bold;
-	font-style: italic;
-}
-
-.main{
-	background-color: #f2f2f2;
-	display: grid;
-	grid-template-areas: 
-    "main__section1"
-    "main__section2"
-    "main__section3";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-}
-
-.section1__h1{
-	text-align: center;
-	text-shadow: 1px 2px 1px black;
-	color: beige;
-}
-
-.main__section2{
-	grid-area: main__section2;
-	margin-bottom: 75px;
 }
 
 .section2__texto{
@@ -99,6 +91,10 @@ main{grid-area: main;}
 	font-family: "libre baskerville", serif;
 	font-weight: bold;
 	margin: 0px 0px 50px 0px;
+}
+
+.icono__palabra{
+	font-weight: bold;
 }
 
 .section3__frase{
