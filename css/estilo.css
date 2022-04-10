@@ -135,6 +135,40 @@ header {
           font-family: "cormorant upright", serif;
           font-weight: bold;
           font-style: italic; }
+  .contenedor__padre footer .contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedor__padre footer .contacto .contacto__texto {
+      text-align: center; }
+    .contenedor__padre footer .contacto .contacto__mail .mailLogonative {
+      padding: 15px 0px;
+      height: 32px; }
+    .contenedor__padre footer .contacto .contacto__mail .mailDireccion {
+      padding: 20px 0px 10px 0px;
+      margin-left: 2px;
+      font-weight: bold;
+      color: black; }
+  .contenedor__padre footer .redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedor__padre footer .redes div .redes__texto {
+      text-align: center; }
+    .contenedor__padre footer .redes .redes__iconos {
+      transform: scale(1.1, 1.1); }
+      .contenedor__padre footer .redes .redes__iconos a .redes__facebook {
+        padding: 0px 15px 0px 15px; }
+      .contenedor__padre footer .redes .redes__iconos a .redes__instagram {
+        padding: 0px 15px 0px 15px; }
+      .contenedor__padre footer .redes .redes__iconos a .redes__linkedin {
+        padding: 0px 15px 0px 15px; }
+  .contenedor__padre footer .copyright .copyright__texto {
+    text-transform: capitalize; }
 
 header {
   grid-area: header; }
@@ -156,51 +190,6 @@ main {
 
 .adaptabilidad {
   grid-area: adaptabilidad; }
-
-.contacto {
-  grid-area: contacto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.contacto__texto {
-  text-align: center; }
-
-.redes__texto {
-  text-align: center; }
-
-.redes {
-  grid-area: redes;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.redes__iconos {
-  transform: scale(1.1, 1.1); }
-
-.redes__facebook {
-  padding: 0px 15px 0px 15px; }
-
-.redes__instagram {
-  padding: 0px 15px 0px 15px; }
-
-.redes__linkedin {
-  padding: 0px 15px 0px 15px; }
-
-.mailLogonative {
-  padding: 15px 0px;
-  height: 32px; }
-
-.mailDireccion {
-  padding: 20px 0px 10px 0px;
-  margin-left: 2px;
-  font-weight: bold;
-  color: black; }
-
-.copyright__texto {
-  text-transform: capitalize; }
 
 main section div .main__imagen {
   margin-bottom: 50px; }
