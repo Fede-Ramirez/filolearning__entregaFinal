@@ -101,6 +101,40 @@ header {
     .contenedor__padre .main .main__section2 {
       grid-area: main__section2;
       margin-bottom: 75px; }
+      .contenedor__padre .main .main__section2 .section2__texto {
+        text-align: center;
+        font-weight: bold;
+        margin: 100px 0px 100px 0px; }
+      .contenedor__padre .main .main__section2 .section2__pregunta {
+        text-align: center;
+        font-weight: bold;
+        margin: 0px 0px 50px 0px; }
+      .contenedor__padre .main .main__section2 .section2__iconos div .icono__palabra {
+        font-weight: bold; }
+    .contenedor__padre .main .main__section3 .section3__frase {
+      color: beige;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 1px 2px 1px black; }
+  .contenedor__padre footer .logo__filolearning {
+    grid-area: logo__filolearning;
+    display: flex;
+    flex-direction: column; }
+    .contenedor__padre footer .logo__filolearning .logo__anchor {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .contenedor__padre footer .logo__filolearning .logo__anchor .tipografiaLogo {
+        font-family: "cormorant upright", serif;
+        font-weight: bold;
+        font-style: italic;
+        color: black; }
+        .contenedor__padre footer .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
+          color: crimson;
+          font-family: "cormorant upright", serif;
+          font-weight: bold;
+          font-style: italic; }
 
 header {
   grid-area: header; }
@@ -110,26 +144,6 @@ main {
 
 .logo__anchor:hover {
   text-decoration: none; }
-
-.section2__texto {
-  text-align: center;
-  font-weight: bold;
-  margin: 100px 0px 100px 0px; }
-
-.section2__pregunta {
-  text-align: center;
-  font-family: "libre baskerville", serif;
-  font-weight: bold;
-  margin: 0px 0px 50px 0px; }
-
-.icono__palabra {
-  font-weight: bold; }
-
-.section3__frase {
-  color: beige;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 1px 2px 1px black; }
 
 .economico {
   grid-area: economico; }
