@@ -98,6 +98,9 @@ header {
       text-align: center;
       text-shadow: 1px 2px 1px black;
       color: beige; }
+    .contenedor__padre .main .main__section2 {
+      grid-area: main__section2;
+      margin-bottom: 75px; }
 
 header {
   grid-area: header; }
@@ -107,10 +110,6 @@ main {
 
 .logo__anchor:hover {
   text-decoration: none; }
-
-.main__section2 {
-  grid-area: main__section2;
-  margin-bottom: 75px; }
 
 .section2__texto {
   text-align: center;
