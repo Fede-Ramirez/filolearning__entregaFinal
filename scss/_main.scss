@@ -10,28 +10,9 @@
     grid-template-rows: auto auto auto;
 }
 
-header{
-	grid-area: header;
-}
+header{grid-area: header;}
 
-main{
-	grid-area: main;
-}
-
-li{ 
-	margin: 10px;
-	padding: 0.5rem;
-	border-radius: 5px;
-}
-
-a{
-  color: blue;
-  text-decoration: none;
-}
-
-a:hover{
-	color: black;
-}
+main{grid-area: main;}
 
 .header__nav{
 	border-top: 4px solid brown;
@@ -48,21 +29,6 @@ a:hover{
 	color: lightslategrey;
 	text-transform: uppercase;
 	font-weight: bold;
-}
-
-h1{
-   font-weight: bold;
-   font-size: 50px;
-   margin: 0px 20px 20px 20px;
-}
-
-.titulos{
-	text-align: center;
-}
-
-.mainTexto{
-	margin: 20px;
-	font-size: 18px;
 }
 
 h4{

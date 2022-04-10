@@ -8,17 +8,20 @@
 h1 {
   font-weight: bold;
   font-size: 40px;
-  margin: 20px 20px 20px 20px; }
+  margin: 20px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: blue; }
 
 a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: black; }
 
 li {
   margin: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 0.5rem; }
 
 .border-danger {
   border-color: brown !important; }
@@ -29,7 +32,7 @@ li {
 .nav-link {
   font-size: 15px; }
 
-.centrar {
+.titulos {
   text-align: center; }
 
 .views__background {
@@ -62,18 +65,6 @@ header {
 main {
   grid-area: main; }
 
-li {
-  margin: 10px;
-  padding: 0.5rem;
-  border-radius: 5px; }
-
-a {
-  color: blue;
-  text-decoration: none; }
-
-a:hover {
-  color: black; }
-
 .header__nav {
   border-top: 4px solid brown;
   border-bottom: 4px solid brown;
@@ -87,18 +78,6 @@ a:hover {
   color: lightslategrey;
   text-transform: uppercase;
   font-weight: bold; }
-
-h1 {
-  font-weight: bold;
-  font-size: 50px;
-  margin: 0px 20px 20px 20px; }
-
-.titulos {
-  text-align: center; }
-
-.mainTexto {
-  margin: 20px;
-  font-size: 18px; }
 
 h4 {
   font-weight: bold;
