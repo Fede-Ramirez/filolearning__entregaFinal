@@ -88,7 +88,7 @@ main {
   flex-direction: column; }
 
 .tipografiaLogo {
-  font-family: "cormorant upright", Serif;
+  font-family: "cormorant upright", serif;
   font-weight: bold;
   font-style: italic;
   color: black; }
@@ -98,6 +98,9 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+
+.logo__anchor:hover {
+  text-decoration: none; }
 
 .logo__nombre {
   color: crimson;
@@ -182,6 +185,9 @@ main {
 
 main section div .main__imagen {
   margin-bottom: 50px; }
+
+main section div .edicionEncabezados {
+  font-weight: bold; }
 
 main section div .edicionParrafos {
   line-height: 1.6;
@@ -293,6 +299,12 @@ footer {
       height: 32px;
       width: 32px;
       margin-top: 10px; }
+    footer .footer__sections div .redes__texto {
+      font-weight: bold;
+      text-align: center; }
+    footer .footer__sections div .contacto__texto {
+      text-align: center;
+      font-weight: bold; }
     footer .footer__sections .redes__iconos {
       transform: scale(1.1, 1.1); }
       footer .footer__sections .redes__iconos a .redes__facebook {
@@ -419,7 +431,6 @@ footer {
     padding: 0px 0px 10px 0px;
     margin-top: 20px;
     color: #2e2e1f;
-    font-family: "libre baskerville", serif;
     text-align: center; }
   main section div div .imagenesMobile {
     width: 100%;
@@ -428,17 +439,12 @@ footer {
     margin-bottom: 50px; }
   footer .footer__sections div .contacto__texto {
     font-size: 15px;
-    font-weight: bold;
-    text-align: center;
     margin-top: 15px; }
   footer .footer__sections div .redes__texto {
     font-size: 15px;
-    font-weight: bold;
-    text-align: right;
     margin: 15px 10px 15px 0px; }
   footer .footer__sections div .copyright__texto {
     font-size: 12px;
-    text-transform: capitalize;
     margin-left: 25px; }
   footer .footer__sections a .tipografiaLogo {
     font-size: 25px; }
@@ -658,8 +664,6 @@ footer {
     margin: 20px 10px 20px 0px;
     color: #2e2e1f;
     font-size: 30px;
-    font-family: "libre baskerville", serif;
-    font-weight: bold;
     text-align: left; }
   main section div div .imagenDesktop {
     width: 100%;
@@ -669,17 +673,12 @@ footer {
     flex-direction: row; }
   footer div div .contacto__texto {
     font-size: 20px;
-    text-align: center;
-    font-weight: bold;
     margin-top: 35px; }
   footer div div .redes__texto {
     font-size: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-    font-weight: bold; }
+    margin-bottom: 25px; }
   footer div div .copyright__texto {
     font-size: 12px;
-    text-transform: capitalize;
     margin-left: 60px; }
   footer div a .tipografiaLogo {
     font-size: 40px; }
@@ -691,9 +690,7 @@ footer {
       display: none; }
   footer div .contacto__mail .mailDireccion {
     padding: 20px 0px;
-    font-size: 15px;
-    font-weight: bold;
-    color: black; }
+    font-size: 15px; }
   .footerDesktop {
     display: flex;
     flex-direction: row-reverse; } }

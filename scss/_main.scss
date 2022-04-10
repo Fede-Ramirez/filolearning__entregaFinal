@@ -42,7 +42,7 @@ main{grid-area: main;}
 }
 
 .tipografiaLogo{
-	font-family: "cormorant upright", Serif;
+	font-family: $logoFont;
 	font-weight: bold;
 	font-style: italic;
 	color: black;
@@ -53,6 +53,10 @@ main{grid-area: main;}
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.logo__anchor:hover{
+  text-decoration: none;
 }
 
 .logo__nombre{
@@ -156,6 +160,9 @@ main{
 		div{
 			.main__imagen{
 				margin-bottom: 50px;
+			}
+			.edicionEncabezados{
+				font-weight: bold;
 			}
 			.edicionParrafos{
 				line-height: map-get($estilosParrafos, interlineado);

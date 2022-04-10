@@ -185,7 +185,6 @@ main{
 	        padding: 0px 0px 10px 0px;
 	        margin-top: 20px;
 	        color: #2e2e1f;
-	        font-family: "libre baskerville", serif;
 	        text-align: center;
             }
 		}
@@ -221,19 +220,14 @@ footer{
 		div{
 			.contacto__texto{
 				font-size: 15px;
-	            font-weight: bold;
-	            text-align: center;
 	            margin-top: 15px;
 			}
 			.redes__texto{
 				font-size: 15px;
-	            font-weight: bold;
-	            text-align: right;
 	            margin: 15px 10px 15px 0px;
 			}
 			.copyright__texto{
 				font-size: 12px;
-	            text-transform: capitalize;
 	            margin-left: 25px;
 			}
 		}
@@ -627,8 +621,6 @@ main{
 	            margin: 20px 10px 20px 0px ;
 	            color: #2e2e1f;
 	            font-size: 30px;
-	            font-family: "libre baskerville", serif;
-	            font-weight: bold;
 	            text-align: left;
             }            
 		}
@@ -663,19 +655,14 @@ footer{
 		div{
 			.contacto__texto{
 				font-size: 20px;
-	            text-align: center;
-	            font-weight: bold;
 	            margin-top: 35px;
 			}
 			.redes__texto{
 				font-size: 20px;
-	            text-align: center;
 	            margin-bottom: 25px;
-	            font-weight: bold;
 			}
 			.copyright__texto{
 				font-size: 12px;
-	            text-transform: capitalize;
 	            margin-left: 60px;
 			}
 		}
@@ -696,8 +683,6 @@ footer{
 			.mailDireccion{
 				padding: 20px 0px;
 	            font-size: 15px;
-	            font-weight: bold;
-	            color: black;
 			}
 		}
 	}

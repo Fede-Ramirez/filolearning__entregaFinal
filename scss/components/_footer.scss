@@ -19,6 +19,16 @@ footer {
 	            margin-top: 10px;
             }
 	    }
+	    div{
+            .redes__texto{
+	    	font-weight: bold;
+	    	text-align: center;
+	        }
+	        .contacto__texto{
+	        	text-align: center;
+	            font-weight: bold;
+	        }
+	    }
 	    .redes__iconos{
 		        transform: $redesTransform;
 		        a{
