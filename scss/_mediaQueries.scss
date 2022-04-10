@@ -55,8 +55,6 @@ footer{
 
 .mailDireccion{
 	font-size: 13px;
-	font-weight: bold;
-	color: black;
 }
 
 .contacto__whatsapp{
@@ -114,6 +112,7 @@ footer{
 
 .icono__palabra{
 	margin-bottom: 50px;
+	font-size: 17px;
 }
 
 .icono__texto{
@@ -134,12 +133,15 @@ footer{
 }
 
 .section1__h1{
-	color: beige;
 	font-size: 40px;
 }
 
 .section2__texto{
 	font-size: 23px;
+}
+
+.section2__pregunta{
+	font-size: 25px;
 }
 
 .section2__iconos{
@@ -204,6 +206,9 @@ main{
 				.imagenesMobile{
                     @include imagenes-mobile;
 				}
+			}
+			.pagos__encabezado{
+				margin-bottom: 50px;
 			}
 		}
 	}
@@ -431,8 +436,6 @@ footer{
 	}
 }
 
-// Estilo footer
-
 .footerDesktop{
 	display: flex;
 	flex-direction: row-reverse;
@@ -545,13 +548,13 @@ footer{
 }
 
 .iconos__edicion{
-	margin: 50px 10px 0px 10px;
+	margin: 50px 10px 0px 30px;
 }
 
 .icono__palabra{
 	margin-left: 30px;
 	padding: 0px 5px 0px 5px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .main__section1{
@@ -568,7 +571,6 @@ footer{
 }
 
 .section1__h1{
-	color: beige;
 	font-size: 80px;
 }
 
@@ -700,8 +702,6 @@ footer{
 		}
 	}
 }
-
-// Estilo footer
 
 .footerDesktop{
 	display: flex;

@@ -31,9 +31,8 @@ main{grid-area: main;}
 	font-weight: bold;
 }
 
-h4{
+.icono__palabra{
 	font-weight: bold;
-	font-size: 17px;
 }
 
 .logo__filolearning{
@@ -77,6 +76,7 @@ h4{
 .section1__h1{
 	text-align: center;
 	text-shadow: 1px 2px 1px black;
+	color: beige;
 }
 
 .main__section2{
@@ -94,32 +94,23 @@ h4{
 	text-align: center;
 	font-family: "libre baskerville", serif;
 	font-weight: bold;
-	font-size: 25px;
 	margin: 0px 0px 50px 0px;
 }
 
-.economico{
-	grid-area: economico;
-}
+.economico{grid-area: economico;}
 
-.seguimiento{
-	grid-area: seguimiento;
-}
+.seguimiento{grid-area: seguimiento;}
 
-.flexibilidad{
-	grid-area: flexibilidad;
-}
+.flexibilidad{grid-area: flexibilidad;}
 
-.adaptabilidad{
-	grid-area: adaptabilidad;
-}
+.adaptabilidad{grid-area: adaptabilidad;}
 
 .contacto{
 	grid-area: contacto;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .redes{
@@ -154,6 +145,8 @@ h4{
 .mailDireccion{
 	padding: 20px 0px 10px 0px;
 	margin-left: 2px;
+	font-weight: bold;
+	color: black;
 }
 
 // Estilos generales ACERCA DE MÍ
