@@ -313,6 +313,9 @@ footer {
     footer .footer__sections div .contacto__texto {
       text-align: center;
       font-weight: bold; }
+    footer .footer__sections .contacto__mail .mailDireccion {
+      color: black;
+      font-weight: bold; }
     footer .footer__sections .redes__iconos {
       transform: scale(1.1, 1.1); }
       footer .footer__sections .redes__iconos a .redes__facebook {
@@ -332,52 +335,52 @@ footer {
     font-size: 25px; }
   .titulos {
     font-size: 40px; }
-  nav {
+  .contenedor__padre header nav {
     background-color: #ffffcc;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  footer {
+  .contenedor__padre footer {
     background-color: #ffffcc;
     grid-area: footer;
     display: grid;
     grid-template-areas: "contacto"  "redes" "logo__filolearning" "copyright";
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto; }
-  .contacto__texto {
-    font-size: 15px;
-    margin-top: 15px; }
-  .contacto__mail {
-    font-size: 15px;
-    display: flex;
-    flex-direction: row; }
-  .mailDireccion {
-    font-size: 13px; }
-  .contacto__whatsapp {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px; }
-  .whatsappLogo {
-    width: 32px;
-    height: 36px; }
-  .whatsapp {
-    margin: 5px 0px 5px 0px;
-    padding: 5px;
-    font-size: 13px;
-    font-weight: bold;
-    color: black; }
-  .redes__texto {
-    font-size: 15px;
-    margin: 15px 10px 15px  0px; }
-  .copyright {
-    grid-area: copyright;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .copyright__texto {
-    font-size: 12px;
-    margin-left: 25px;
-    margin-bottom: 10px; }
+    .contenedor__padre footer .contacto .contacto__texto {
+      font-size: 15px;
+      margin-top: 15px; }
+    .contenedor__padre footer .contacto .contacto__whatsapp {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px; }
+      .contenedor__padre footer .contacto .contacto__whatsapp .whatsappLogo {
+        width: 32px;
+        height: 36px; }
+      .contenedor__padre footer .contacto .contacto__whatsapp .whatsapp {
+        margin: 5px 0px 5px 0px;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        color: black; }
+    .contenedor__padre footer .contacto .contacto__mail {
+      font-size: 15px;
+      display: flex;
+      flex-direction: row; }
+      .contenedor__padre footer .contacto .contacto__mail .mailDireccion {
+        font-size: 13px; }
+    .contenedor__padre footer .redes div .redes__texto {
+      font-size: 15px;
+      margin: 15px 10px 15px  0px; }
+    .contenedor__padre footer .copyright {
+      grid-area: copyright;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .contenedor__padre footer .copyright .copyright__texto {
+        font-size: 12px;
+        margin-left: 25px;
+        margin-bottom: 10px; }
   .tipografiaLogo {
     font-size: 25px; }
   .logo__nombre {
