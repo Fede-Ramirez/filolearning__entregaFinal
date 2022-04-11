@@ -451,81 +451,97 @@ nav {
 
 // Estilo INDEX
 
- nav{
-	background-color:#ffffcc;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
+.contenedor__padre{
+	header{
+        nav{
+	        background-color:#ffffcc;
+	        display: flex;
+	        flex-direction: row;
+	        justify-content: space-between;
+	        align-items: center;
+	        .logo__filolearning{
+	        	.logo__anchor{
+                   .logo{
+	                    margin-left: 60px;
+                    }
+	        	}
+	        }
+	        .header__nav{
+                display: flex;
+	            justify-content: center;
+            }
 
-.header__nav{
-    display: flex;
-	justify-content: center;
-}
-
-.logo{
-	margin-left: 60px;
-}
-
-footer{
-	background-color:#ffffcc;
-	grid-area: footer;
-	display: grid;
-	grid-template-areas:
-	"logo__filolearning redes contacto"
-	"copyright copyright copyright";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto auto;
-}
-
-.contacto{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-.contacto__texto{
-	font-size: 20px;
-}
-
-.contacto__mail{
-	font-size: 15px;
-	display: flex;
-	flex-direction: row;
-}
-
-.contacto__whatsapp{
-	position: fixed;
-	bottom: 20px;
-	right: 0;
-}
-
-.whatsapp{
-	display: none;
-}
-
-.redes{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-
-.redes__texto{
-	font-size: 20px;
-	margin: 0px 10px 0px  0px;
-}
-
-.copyright{
-	grid-area: copyright;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 20px 0px;
-}
-
-.copyright__texto{
-	font-size: 12px;
+        }
+	}
+	main{
+		.main__section1{
+	        background-image:url("../assets/img/foco_idea.jpg");
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        width: 100%;
+	        height: 600px;
+	        grid-area: main__section1;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        .section1__h1{
+	            font-size: 80px;
+            }
+        }
+	}
+	footer{
+	    background-color:#ffffcc;
+	    grid-area: footer;
+	    display: grid;
+	    grid-template-areas:
+	    "logo__filolearning redes contacto"
+	    "copyright copyright copyright";
+	    grid-template-columns: 33% 33% 33%;
+	    grid-template-rows: auto auto;
+	    .contacto{
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: flex-end;
+	        .contacto__texto{
+	            font-size: 20px;
+            }
+            .contacto__mail{
+	            font-size: 15px;
+	            display: flex;
+	            flex-direction: row;
+            }
+            .contacto__whatsapp{
+	            position: fixed;
+	            bottom: 20px;
+	            right: 0;
+	            .whatsapp{
+	                display: none;
+                }
+            }
+        }
+        .redes{
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: flex-end;
+	        div{
+               .redes__texto{
+	                font-size: 20px;
+	                margin: 0px 10px 0px  0px;
+                }
+	        }
+        }
+        .copyright{
+	        grid-area: copyright;
+	        display: flex;
+	        flex-direction: row;
+	        justify-content: center;
+	        margin: 20px 0px;
+	        .copyright__texto{
+	            font-size: 12px;
+            }
+        }
+    }    
 }
 
 .iconos__edicion{
@@ -536,23 +552,6 @@ footer{
 	margin-left: 30px;
 	padding: 0px 5px 0px 5px;
 	font-size: 18px;
-}
-
-.main__section1{
-	background-image:url("../assets/img/foco_idea.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 600px;
-	grid-area: main__section1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.section1__h1{
-	font-size: 80px;
 }
 
 .section2__texto{
