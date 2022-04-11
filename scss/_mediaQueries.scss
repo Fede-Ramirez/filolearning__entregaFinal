@@ -1,4 +1,4 @@
-// Media querie mobile
+/*Media querie mobile*/
 
 @media (max-width: 767px){
 
@@ -19,7 +19,7 @@ nav{
 	font-size: 40px;
 }
 
-// Estilo INDEX
+/*Estilo INDEX*/
 
 .contenedor__padre{
     header{
@@ -167,7 +167,7 @@ nav{
     }    
 }
 
-// Estilo ACERCA DE MÍ
+/*Estilo ACERCA DE MÍ*/
 
 main{
 	section{
@@ -182,7 +182,7 @@ main{
 	}
 } 
 
-// Estilo SERVICIOS
+/*Estilo SERVICIOS*/
 
 @mixin imagenes-mobile{
 	width: 100%;
@@ -204,7 +204,7 @@ main{
 	}
 }
 
-// Estilo footer
+/*Estilo footer*/
 
 footer{
 	.footer__sections{
@@ -255,13 +255,13 @@ footer{
 }
 }
 
-// Media querie md
+/*Media querie md*/
 
 @media (min-width:768px) and (max-width: 991px){
 
-// Estilos generales
+/*Estilos generales*/
 
-nav{ // nativo   
+nav{ /*nativo*/   
 	
 	.logo__filolearning{
         .logo__anchor{
@@ -283,7 +283,7 @@ nav{ // nativo
 	}
 }
 
-nav { //bootstrap 
+nav { /*bootstrap*/ 
 	div{
 		.tipografiaLogo{
 			font-size: 30px;
@@ -303,7 +303,7 @@ nav { //bootstrap
 	}
 }
 
-// Estilo INDEX
+/*Estilo INDEX*/
 
 .contenedor__padre{
 	header{
@@ -447,7 +447,7 @@ nav { //bootstrap
     }    
 }
 
-// Estilo ACERCA DE MÍ
+/*Estilo ACERCA DE MÍ*/
 
 main{
 	section{
@@ -465,7 +465,7 @@ main{
 	}
 }
 
-// Estilo SERVICIOS
+/*Estilo SERVICIOS*/
 
 @mixin imagenes-mdscreen{
 	width: 100%;
@@ -493,7 +493,7 @@ main{
 	}
 }
 
-// Estilo footer
+/*Estilo footer*/
 
 footer{
 	div{
@@ -545,11 +545,11 @@ footer{
 }
 }
 
-// Media querie desktop
+/*Media querie desktop*/
 
 @media (min-width: 992px){
 
-// Estilos generales
+/*Estilos generales*/
 
 nav {
 	div{
@@ -567,7 +567,7 @@ nav {
 	}
 }
 
-// Estilo INDEX
+/*Estilo INDEX*/
 
 .contenedor__padre{
 	header{
@@ -705,7 +705,7 @@ nav {
     }    
 }
 
-// Estilo ACERCA DE MÍ
+/*Estilo ACERCA DE MÍ*/
 
 main{
 	section{
@@ -721,7 +721,7 @@ main{
 	}
 }
 
-// Estilo SERVICIOS
+/*Estilo SERVICIOS*/
 
 main{
 	section{
@@ -745,7 +745,7 @@ main{
 	}
 }
 
-// Estilo footer
+/*Estilo footer*/
 
 footer{
 	div{

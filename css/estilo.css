@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Estilos generales del sitio*/
 * {
   margin: 0;
   padding: 0; }
@@ -53,42 +55,48 @@ header {
   header div nav div div ul li .views {
     font-weight: bold; }
 
+/*Estilos generales INDEX (CSS NATIVO)*/
 .contenedor__padre {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto; }
-  .contenedor__padre header nav .header__nav {
-    border-top: 4px solid brown;
-    border-bottom: 4px solid brown;
-    padding: 15px 15px 15px 0px;
-    margin-right: 50px; }
-    .contenedor__padre header nav .header__nav .nav__item {
-      display: inline; }
-      .contenedor__padre header nav .header__nav .nav__item .nav__anchor {
-        color: lightslategrey;
-        text-transform: uppercase;
-        font-weight: bold; }
-  .contenedor__padre header nav .logo__filolearning {
-    grid-area: logo__filolearning;
-    display: flex;
-    flex-direction: column; }
-    .contenedor__padre header nav .logo__filolearning .logo__anchor {
+  .contenedor__padre header {
+    grid-area: header; }
+    .contenedor__padre header nav .header__nav {
+      border-top: 4px solid brown;
+      border-bottom: 4px solid brown;
+      padding: 15px 15px 15px 0px;
+      margin-right: 50px; }
+      .contenedor__padre header nav .header__nav .nav__item {
+        display: inline; }
+        .contenedor__padre header nav .header__nav .nav__item .nav__anchor {
+          color: lightslategrey;
+          text-transform: uppercase;
+          font-weight: bold; }
+    .contenedor__padre header nav .logo__filolearning {
+      grid-area: logo__filolearning;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      .contenedor__padre header nav .logo__filolearning .logo__anchor .tipografiaLogo {
-        font-family: "cormorant upright", serif;
-        font-weight: bold;
-        font-style: italic;
-        color: black; }
-        .contenedor__padre header nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
-          color: crimson;
+      flex-direction: column; }
+      .contenedor__padre header nav .logo__filolearning .logo__anchor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        .contenedor__padre header nav .logo__filolearning .logo__anchor:hover {
+          text-decoration: none; }
+        .contenedor__padre header nav .logo__filolearning .logo__anchor .tipografiaLogo {
           font-family: "cormorant upright", serif;
           font-weight: bold;
-          font-style: italic; }
+          font-style: italic;
+          color: black; }
+          .contenedor__padre header nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
+            color: crimson;
+            font-family: "cormorant upright", serif;
+            font-weight: bold;
+            font-style: italic; }
   .contenedor__padre main {
+    grid-area: main;
     background-color: #f2f2f2;
     display: grid;
     grid-template-areas: "main__section1" "main__section2" "main__section3";
@@ -111,6 +119,14 @@ header {
         margin: 0px 0px 50px 0px; }
       .contenedor__padre main .main__section2 .section2__iconos div .icono__palabra {
         font-weight: bold; }
+      .contenedor__padre main .main__section2 .section2__iconos .economico {
+        grid-area: economico; }
+      .contenedor__padre main .main__section2 .section2__iconos .seguimiento {
+        grid-area: seguimiento; }
+      .contenedor__padre main .main__section2 .section2__iconos .flexibilidad {
+        grid-area: flexibilidad; }
+      .contenedor__padre main .main__section2 .section2__iconos .adaptabilidad {
+        grid-area: adaptabilidad; }
     .contenedor__padre main .main__section3 .section3__frase {
       color: beige;
       text-align: center;
@@ -125,6 +141,8 @@ header {
       flex-direction: row;
       justify-content: center;
       align-items: center; }
+      .contenedor__padre footer .logo__filolearning .logo__anchor:hover {
+        text-decoration: none; }
       .contenedor__padre footer .logo__filolearning .logo__anchor .tipografiaLogo {
         font-family: "cormorant upright", serif;
         font-weight: bold;
@@ -170,27 +188,7 @@ header {
   .contenedor__padre footer .copyright .copyright__texto {
     text-transform: capitalize; }
 
-header {
-  grid-area: header; }
-
-main {
-  grid-area: main; }
-
-.logo__anchor:hover {
-  text-decoration: none; }
-
-.economico {
-  grid-area: economico; }
-
-.seguimiento {
-  grid-area: seguimiento; }
-
-.flexibilidad {
-  grid-area: flexibilidad; }
-
-.adaptabilidad {
-  grid-area: adaptabilidad; }
-
+/*Estilos generales ACERCA DE MÍ*/
 main section div .main__imagen {
   margin-bottom: 50px; }
 
@@ -217,6 +215,7 @@ main section .oracionFinal {
 main .parrafos {
   margin-bottom: 30px; }
 
+/*Estilos generales SERVICIOS*/
 main section div .edicionMapas {
   border-color: black;
   border-style: solid;
@@ -242,6 +241,7 @@ main section div div div .edicionEncabezados {
 main .iconos {
   margin-bottom: 50px; }
 
+/*Estilos generales ASIGNATURAS*/
 main section div .main__encabezados {
   text-align: center;
   font-family: "libre baskerville", serif;
@@ -266,6 +266,7 @@ main section .cardArea {
     text-align: center;
     font-size: 15px; }
 
+/*Estilos generales CONTACTO*/
 main section div .contacto__oracion {
   margin-top: 50px;
   font-size: 20px;
@@ -331,6 +332,7 @@ footer {
       text-transform: capitalize;
       font-size: 13px; }
 
+/*Media querie mobile*/
 @media (max-width: 767px) {
   nav div .tipografiaLogo {
     font-size: 25px; }
@@ -338,6 +340,7 @@ footer {
     font-size: 25px; }
   .titulos {
     font-size: 40px; }
+  /*Estilo INDEX*/
   .contenedor__padre header nav {
     background-color: #ffffcc;
     display: flex;
@@ -434,16 +437,19 @@ footer {
         font-size: 12px;
         margin-left: 25px;
         margin-bottom: 10px; }
+  /*Estilo ACERCA DE MÍ*/
   main section div .edicionEncabezados {
     padding: 0px 0px 10px 0px;
     margin-top: 20px;
     color: #2e2e1f;
     text-align: center; }
+  /*Estilo SERVICIOS*/
   main section div div .imagenesMobile {
     width: 100%;
     height: 250px; }
   main section div .icono__palabra {
     font-size: 17px; }
+  /*Estilo footer*/
   footer .footer__sections div .contacto__texto {
     font-size: 15px;
     margin-top: 15px; }
@@ -475,21 +481,28 @@ footer {
       font-weight: bold;
       color: black; } }
 
+/*Media querie md*/
 @media (min-width: 768px) and (max-width: 991px) {
-  nav .logo__filolearning .logo__anchor .tipografiaLogo {
-    font-size: 30px; }
-    nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
+  /*Estilos generales*/
+  nav {
+    /*nativo*/ }
+    nav .logo__filolearning .logo__anchor .tipografiaLogo {
       font-size: 30px; }
-  nav ul li {
-    padding: 10px; }
-    nav ul li .nav__anchor {
-      font-size: 10px; }
-  nav div .tipografiaLogo {
-    font-size: 30px; }
-    nav div .tipografiaLogo .logo__nombre {
+      nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
+        font-size: 30px; }
+    nav ul li {
+      padding: 10px; }
+      nav ul li .nav__anchor {
+        font-size: 10px; }
+  nav {
+    /*bootstrap*/ }
+    nav div .tipografiaLogo {
       font-size: 30px; }
-  nav div div ul li .nav__anchor {
-    font-size: 15px; }
+      nav div .tipografiaLogo .logo__nombre {
+        font-size: 30px; }
+    nav div div ul li .nav__anchor {
+      font-size: 15px; }
+  /*Estilo INDEX*/
   .contenedor__padre header nav {
     background-color: #ffffcc;
     display: flex;
@@ -589,6 +602,7 @@ footer {
       margin: 20px 0px; }
       .contenedor__padre footer .copyright .copyright__texto {
         font-size: 12px; }
+  /*Estilo ACERCA DE MÍ*/
   main section div .edicionEncabezados {
     padding: 0px 0px 10px 0px;
     margin: 20px 10px 20px 0px;
@@ -597,6 +611,7 @@ footer {
     font-family: "libre baskerville", serif;
     font-weight: bold;
     text-align: left; }
+  /*Estilo SERVICIOS*/
   main section div div .card-img-top {
     width: 100%;
     height: 300px; }
@@ -605,6 +620,7 @@ footer {
     flex-direction: row; }
   main section div .icono__palabra {
     font-size: 18px; }
+  /*Estilo footer*/
   footer div div .contacto__texto {
     font-size: 20px;
     text-align: center;
@@ -635,11 +651,14 @@ footer {
     display: flex;
     flex-direction: row-reverse; } }
 
+/*Media querie desktop*/
 @media (min-width: 992px) {
+  /*Estilos generales*/
   nav div .tipografiaLogo {
     font-size: 40px; }
   nav div div ul li {
     padding: 20px; }
+  /*Estilo INDEX*/
   .contenedor__padre header nav {
     background-color: #ffffcc;
     display: flex;
@@ -734,12 +753,14 @@ footer {
       margin: 20px 0px; }
       .contenedor__padre footer .copyright .copyright__texto {
         font-size: 12px; }
+  /*Estilo ACERCA DE MÍ*/
   main section div .edicionEncabezados {
     padding: 0px 0px 10px 0px;
     margin: 20px 10px 20px 0px;
     color: #2e2e1f;
     font-size: 30px;
     text-align: left; }
+  /*Estilo SERVICIOS*/
   main section div div .imagenDesktop {
     width: 100%;
     height: 300px; }
@@ -748,6 +769,7 @@ footer {
     flex-direction: row; }
   main section div .icono__palabra {
     font-size: 20px; }
+  /*Estilo footer*/
   footer div div .contacto__texto {
     font-size: 20px;
     margin-top: 35px; }
