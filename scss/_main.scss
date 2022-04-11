@@ -22,6 +22,10 @@
 	             color: lightslategrey;
 	             text-transform: uppercase;
 	             font-weight: bold;
+	             &:hover{
+	             	text-decoration: underline;
+	             	color: black;
+	             }
             }
           }
         }

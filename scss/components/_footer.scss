@@ -1,8 +1,13 @@
+/*Estilos generales del footer*/
+
 footer {
 	background-color: $headerAndFooterBg;
     .footer__sections{
     	margin: 10px 0px 0px 0px;
-	    a{
+	    .logo__anchor{
+	    	&:hover{
+	    		text-decoration: none;
+	    	}
 	    	.tipografiaLogo{
 	    		font-family: $logoFont;
 				font-style: italic;
@@ -13,11 +18,6 @@ footer {
                      font-family: $logoFont;
 				}
 	    	}
-	    	.logoEmailbootstrap{
-	            height: 32px;
-	            width: 32px;
-	            margin-top: 10px;
-            }
 	    }
 	    div{
             .redes__texto{
@@ -34,6 +34,11 @@ footer {
 	    		color: black;
 	    		font-weight: bold;
 	    	}
+	    	.logoEmailbootstrap{
+	            height: 32px;
+	            width: 32px;
+	            margin-top: 10px;
+            }
 	    }
 	    .redes__iconos{
 		        transform: $redesTransform;

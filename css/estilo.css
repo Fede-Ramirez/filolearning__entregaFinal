@@ -7,53 +7,49 @@
 * {
   font-family: "libre baskerville", serif; }
 
-h1 {
+main section div h1 {
   font-weight: bold;
-  font-size: 40px;
-  margin: 20px; }
+  text-align: center;
+  margin: 50px; }
 
 a {
   text-decoration: none;
-  color: blue; }
-
-a:hover {
-  text-decoration: underline;
-  color: black; }
+  color: blue;
+  font-weight: bold; }
+  a:hover {
+    text-decoration: underline;
+    color: black; }
 
 li {
   margin: 10px;
   border-radius: 5px;
   padding: 0.5rem; }
 
-.border-danger {
-  border-color: brown !important; }
-
-.navbar-brand:hover {
-  text-decoration: none; }
-
-.nav-link {
-  font-size: 15px; }
-
-.titulos {
-  text-align: center; }
-
 .views__background {
   background-color: #FDFCE5; }
 
+/*Estilos generales del header*/
 header {
   background-color: #ffffcc; }
+  header div nav div div .border-danger {
+    border-color: brown !important; }
+    header div nav div div .border-danger .nav-item .nav-link {
+      font-size: 15px;
+      font-weight: bold; }
+      header div nav div div .border-danger .nav-item .nav-link:hover {
+        color: black; }
+    header div nav div div .border-danger .nav-item .nav__anchor {
+      color: white !important;
+      font-weight: bold; }
   header div nav div .tipografiaLogo {
     font-family: "cormorant upright", serif;
     font-style: italic;
     font-weight: bold; }
+    header div nav div .tipografiaLogo:hover {
+      text-decoration: none; }
     header div nav div .tipografiaLogo .logo__nombre {
       color: crimson;
       font-family: "cormorant upright", serif; }
-  header div nav div div ul li .nav__anchor {
-    color: white !important;
-    font-weight: bold; }
-  header div nav div div ul li .views {
-    font-weight: bold; }
 
 /*Estilos generales INDEX (CSS NATIVO)*/
 .contenedor__padre {
@@ -74,6 +70,9 @@ header {
           color: lightslategrey;
           text-transform: uppercase;
           font-weight: bold; }
+          .contenedor__padre header nav .header__nav .nav__item .nav__anchor:hover {
+            text-decoration: underline;
+            color: black; }
     .contenedor__padre header nav .logo__filolearning {
       grid-area: logo__filolearning;
       display: flex;
@@ -295,22 +294,21 @@ main form {
   main form section div .boton--restablecer {
     background-color: lightcyan; }
 
+/*Estilos generales del footer*/
 footer {
   background-color: #ffffcc; }
   footer .footer__sections {
     margin: 10px 0px 0px 0px; }
-    footer .footer__sections a .tipografiaLogo {
+    footer .footer__sections .logo__anchor:hover {
+      text-decoration: none; }
+    footer .footer__sections .logo__anchor .tipografiaLogo {
       font-family: "cormorant upright", serif;
       font-style: italic;
       font-weight: bold;
       color: black; }
-      footer .footer__sections a .tipografiaLogo .logo__nombre {
+      footer .footer__sections .logo__anchor .tipografiaLogo .logo__nombre {
         color: crimson;
         font-family: "cormorant upright", serif; }
-    footer .footer__sections a .logoEmailbootstrap {
-      height: 32px;
-      width: 32px;
-      margin-top: 10px; }
     footer .footer__sections div .redes__texto {
       font-weight: bold;
       text-align: center; }
@@ -320,6 +318,10 @@ footer {
     footer .footer__sections .contacto__mail .mailDireccion {
       color: black;
       font-weight: bold; }
+    footer .footer__sections .contacto__mail .logoEmailbootstrap {
+      height: 32px;
+      width: 32px;
+      margin-top: 10px; }
     footer .footer__sections .redes__iconos {
       transform: scale(1.1, 1.1); }
       footer .footer__sections .redes__iconos a .redes__facebook {
@@ -338,7 +340,7 @@ footer {
     font-size: 25px; }
   nav div .logo__nombre {
     font-size: 25px; }
-  .titulos {
+  main section div .titulos {
     font-size: 40px; }
   /*Estilo INDEX*/
   .contenedor__padre header nav {
@@ -502,6 +504,8 @@ footer {
         font-size: 30px; }
     nav div div ul li .nav__anchor {
       font-size: 15px; }
+  main section div .titulos {
+    font-size: 50px; }
   /*Estilo INDEX*/
   .contenedor__padre header nav {
     background-color: #ffffcc;
@@ -658,6 +662,8 @@ footer {
     font-size: 40px; }
   nav div div ul li {
     padding: 20px; }
+  main section div .titulos {
+    font-size: 60px; }
   /*Estilo INDEX*/
   .contenedor__padre header nav {
     background-color: #ffffcc;

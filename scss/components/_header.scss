@@ -1,30 +1,41 @@
+/*Estilos generales del header*/
+
 header {
 	background-color: $headerAndFooterBg;
 	div{
 		nav{
 			div{
+				div{
+					.border-danger{
+	                    border-color: brown !important;
+	                    .nav-item{
+	                    	.nav-link{
+	                            font-size: 15px;
+	                            font-weight: bold;
+	                            &:hover{
+	                            	color: black;
+	                            }
+                            }
+                            .nav__anchor{
+	                    	    color:$navAnchorsColor !important;
+	                    	    font-weight: bold;
+	                        }
+                        }
+				    }
+				}    
 				.tipografiaLogo{
 					font-family: $logoFont;
 					font-style: italic;
 					font-weight: bold;
+					&:hover{
+						text-decoration: none;
+					}
 					.logo__nombre{
 						color: crimson;
 						font-family: $logoFont;
 					}
 				}
-			div{
-				ul{
-					li{
-	                    .nav__anchor{
-	                    	color:$navAnchorsColor !important;
-	                    	font-weight: bold;
-	                    }
-	                    .views{
-	                    	font-weight: bold;
-	                    }
-					}
-				}
-			}	
+				
 			}
 		}
 	}

@@ -9,42 +9,32 @@
 	font-family: $generalFont;
 }
 
-h1{
-	font-weight: bold;
-	font-size: 40px;
-	margin: 20px;
+main{
+	section{
+		div{
+            h1{
+	            font-weight: bold;
+	            text-align: $h1Center;
+	            margin: 50px;
+            }
+		}
+	}
 }
 
 a{
 	text-decoration: none;
 	color: blue;
-}
-
-a:hover{
-	text-decoration: underline;
-	color: black;
+	font-weight: bold;
+	&:hover{
+	   text-decoration: underline;
+	   color: black;	
+	}
 }
 
 li{
 	margin: 10px;
 	border-radius: 5px;
 	padding: 0.5rem;
-}
-
-.border-danger{
-	border-color: brown !important;
-}
-
-.navbar-brand:hover{
-	text-decoration: none;
-}
-
-.nav-link{
-	font-size: 15px;
-}
-
-.titulos{
-	text-align: $h1Center;
 }
 
 .views__background{

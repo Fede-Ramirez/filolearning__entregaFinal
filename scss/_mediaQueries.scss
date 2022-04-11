@@ -15,8 +15,14 @@ nav{
 	}
 }
 
-.titulos{
-	font-size: 40px;
+main{
+	section{
+		div{
+           .titulos{
+	           font-size: 40px;
+            }
+		}
+	}
 }
 
 /*Estilo INDEX*/
@@ -303,6 +309,16 @@ nav { /*bootstrap*/
 	}
 }
 
+main{
+	section{
+		div{
+           .titulos{
+	           font-size: 50px;
+            }
+		}
+	}
+}
+
 /*Estilo INDEX*/
 
 .contenedor__padre{
@@ -564,6 +580,16 @@ nav {
 			}
 		}
 		
+	}
+}
+
+main{
+	section{
+		div{
+           .titulos{
+	           font-size: 60px;
+            }
+		}
 	}
 }
 
