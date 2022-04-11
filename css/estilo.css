@@ -228,9 +228,12 @@ main section div .edicionMapas {
 main section div .pagos__encabezado {
   text-align: center;
   font-family: "libre baskerville", serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  margin: 75px 75px 0px 75px; }
+  margin: 75px 75px 50px 75px; }
+
+main section div .icono__palabra {
+  font-weight: bold; }
 
 main section div div div .edicionEncabezados {
   font-weight: bold;
@@ -328,7 +331,7 @@ footer {
       text-transform: capitalize;
       font-size: 13px; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   nav div .tipografiaLogo {
     font-size: 25px; }
   nav div .logo__nombre {
@@ -439,8 +442,8 @@ footer {
   main section div div .imagenesMobile {
     width: 100%;
     height: 250px; }
-  main section div .pagos__encabezado {
-    margin-bottom: 50px; }
+  main section div .icono__palabra {
+    font-size: 17px; }
   footer .footer__sections div .contacto__texto {
     font-size: 15px;
     margin-top: 15px; }
@@ -455,21 +458,24 @@ footer {
   footer .footer__sections a .logo__nombre {
     font-size: 25px; }
   footer .footer__sections a .mailDireccion {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-size: 13px;
+    padding: 20px 0px; }
   footer .contacto__whatsapp {
     display: flex;
     flex-direction: row; }
     footer .contacto__whatsapp .whatsappLogo {
       width: 32px !important;
-      height: 32px !important; }
+      height: 32px !important;
+      margin-top: 15px; }
     footer .contacto__whatsapp .whatsapp {
-      margin-top: 5px;
+      margin-top: 15px;
       padding: 5px;
       font-size: 13px;
       font-weight: bold;
       color: black; } }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   nav .logo__filolearning .logo__anchor .tipografiaLogo {
     font-size: 30px; }
     nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
@@ -525,7 +531,7 @@ footer {
     .contenedor__padre main .main__section2 .section2__iconos .icono__palabra {
       margin-left: 30px;
       padding: 0px 5px 0px 5px;
-      font-size: 16px; }
+      font-size: 18px; }
     .contenedor__padre main .main__section2 .section2__iconos .icono__texto {
       margin-left: 5px;
       font-size: 13px; }
@@ -595,10 +601,8 @@ footer {
   main section div div div .iframes {
     display: flex;
     flex-direction: row; }
-  main section div .pagos__encabezado {
-    margin-bottom: 50px; }
   main section div .icono__palabra {
-    font-size: 16px; }
+    font-size: 18px; }
   footer div div .contacto__texto {
     font-size: 20px;
     text-align: center;
@@ -673,7 +677,7 @@ footer {
     .contenedor__padre main .main__section2 .section2__iconos .icono__palabra {
       margin-left: 30px;
       padding: 0px 5px 0px 5px;
-      font-size: 18px; }
+      font-size: 20px; }
     .contenedor__padre main .main__section2 .section2__iconos .icono__texto {
       margin-left: 5px; }
   .contenedor__padre main .main__section3 {
@@ -719,7 +723,7 @@ footer {
       justify-content: flex-end; }
       .contenedor__padre footer .redes div .redes__texto {
         font-size: 20px;
-        margin: 0px 10px 0px  0px; }
+        margin-bottom: 25px; }
     .contenedor__padre footer .copyright {
       grid-area: copyright;
       display: flex;
@@ -740,6 +744,8 @@ footer {
   main section div div div .iframes {
     display: flex;
     flex-direction: row; }
+  main section div .icono__palabra {
+    font-size: 20px; }
   footer div div .contacto__texto {
     font-size: 20px;
     margin-top: 35px; }

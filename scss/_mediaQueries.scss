@@ -1,6 +1,6 @@
 // Media querie mobile
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
 //Estilos generales
 
@@ -197,8 +197,8 @@ main{
                     @include imagenes-mobile;
 				}
 			}
-			.pagos__encabezado{
-				margin-bottom: 50px;
+			.icono__palabra{
+				font-size: 17px;
 			}
 		}
 	}
@@ -231,6 +231,8 @@ footer{
 			}
 			.mailDireccion{
 				margin-bottom: 0px;
+				font-size: 13px;
+				padding: 20px 0px;
 			}
 		}
 	}
@@ -240,9 +242,10 @@ footer{
 		.whatsappLogo{
 			width: 32px !important;
 			height: 32px !important;
+			margin-top: 15px;
 		}
 		.whatsapp{
-			margin-top: 5px;
+			margin-top: 15px;
 	        padding: 5px;
 	        font-size: 13px;
 	        font-weight: bold;
@@ -254,7 +257,7 @@ footer{
 
 // Media querie md
 
-@media (min-width:769px) and (max-width: 991px){
+@media (min-width:768px) and (max-width: 991px){
 
 // Estilos generales
 
@@ -362,7 +365,7 @@ nav { //bootstrap
                 .icono__palabra{
 	                margin-left: 30px;
 	                padding: 0px 5px 0px 5px;
-	                font-size: 16px;
+	                font-size: 18px;
                 }
                 .icono__texto{
 	                margin-left: 5px;
@@ -480,11 +483,8 @@ main{
 					}
 				}
 			}
-			.pagos__encabezado{
-                margin-bottom: 50px;
-			}
 		   .icono__palabra{
-			    font-size: 16px;
+			    font-size: 18px;
 		    }
 		}
 	}
@@ -624,7 +624,7 @@ nav {
                 .icono__palabra{
 	                margin-left: 30px;
 	                padding: 0px 5px 0px 5px;
-	                font-size: 18px;
+	                font-size: 20px;
                 }
                 .icono__texto{
 	                margin-left: 5px;
@@ -685,7 +685,7 @@ nav {
 	        div{
                .redes__texto{
 	                font-size: 20px;
-	                margin: 0px 10px 0px  0px;
+	                margin-bottom: 25px;
                 }
 	        }
         }
@@ -734,6 +734,9 @@ main{
 						flex-direction: row;
 					}
 				}
+			}
+			.icono__palabra{
+				font-size: 20px;
 			}
 		}
 	}
