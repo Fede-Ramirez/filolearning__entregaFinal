@@ -282,6 +282,12 @@ nav{ // nativo
 
 nav { //bootstrap 
 	div{
+		.tipografiaLogo{
+			font-size: 30px;
+			.logo__nombre{
+				font-size: 30px;
+			}
+		}
 		div{
 			ul{
 				li{
