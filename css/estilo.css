@@ -470,48 +470,113 @@ footer {
       color: black; } }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  nav div .tipografiaLogo {
-    font-size: 35px; }
-  nav div div ul li {
-    padding: 20px; }
-  main section .indexImg1 {
+  nav .logo__filolearning .logo__anchor .tipografiaLogo {
+    font-size: 30px; }
+    nav .logo__filolearning .logo__anchor .tipografiaLogo .logo__nombre {
+      font-size: 30px; }
+  nav ul li {
+    padding: 10px; }
+    nav ul li .nav__anchor {
+      font-size: 11px; }
+  nav div div ul li .nav__anchor {
+    font-size: 15px; }
+  .contenedor__padre header nav {
+    background-color: #ffffcc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .contenedor__padre header nav .logo__filolearning .logo__anchor .logo {
+      margin-left: 5px; }
+    .contenedor__padre header nav .header__nav {
+      display: flex;
+      justify-content: center; }
+  .contenedor__padre main .main__section1 {
     background-image: url("../assets/img/foco_idea.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 650px; }
-    main section .indexImg1 .section1__h1 {
-      color: beige;
-      font-size: 95px;
-      text-shadow: 1px 2px 1px 2px ghostwhite;
-      text-align: center; }
-  main section div .section2__texto {
-    font-size: 30px; }
-  main section div .iconos__edicion {
-    margin: 50px 10px 20px 10px;
-    width: 150px;
-    height: 150px; }
-  main section div .icono__palabra {
-    font-size: 18px;
-    font-weight: bold; }
-  main section div .icono__texto {
-    font-size: 15px;
-    text-align: center; }
-  main section div .section3__frase {
-    color: snow;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    margin-top: 50px;
-    text-shadow: 1px 2px 1px black; }
-  main section .indexImg2 {
+    height: 500px;
+    grid-area: main__section1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contenedor__padre main .main__section1 .section1__h1 {
+      font-size: 60px; }
+  .contenedor__padre main .main__section2 .section2__texto {
+    font-size: 20px; }
+  .contenedor__padre main .main__section2 .section2__pregunta {
+    font-size: 25px; }
+  .contenedor__padre main .main__section2 .section2__iconos {
+    display: grid;
+    grid-template-areas: "economico seguimiento flexibilidad adaptabilidad";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .contenedor__padre main .main__section2 .section2__iconos .iconos__edicion {
+      margin: 50px 10px 0px 30px;
+      width: 135px;
+      height: 135px; }
+    .contenedor__padre main .main__section2 .section2__iconos .icono__palabra {
+      margin-left: 30px;
+      padding: 0px 5px 0px 5px;
+      font-size: 16px; }
+    .contenedor__padre main .main__section2 .section2__iconos .icono__texto {
+      margin-left: 5px;
+      font-size: 13px; }
+  .contenedor__padre main .main__section3 {
     background-image: url("../assets/img/cuaderno.jpg");
+    width: 100%;
+    height: 600px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 650px; }
+    grid-area: main__section3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contenedor__padre main .main__section3 .section3__frase {
+      font-size: 40px;
+      margin-top: 40px; }
+  .contenedor__padre footer {
+    background-color: #ffffcc;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "logo__filolearning redes contacto" "copyright copyright copyright";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto; }
+    .contenedor__padre footer .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .contenedor__padre footer .contacto .contacto__texto {
+        font-size: 15px; }
+      .contenedor__padre footer .contacto .contacto__mail {
+        font-size: 12px;
+        display: flex;
+        flex-direction: row; }
+      .contenedor__padre footer .contacto .contacto__whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 0; }
+        .contenedor__padre footer .contacto .contacto__whatsapp .whatsapp {
+          display: none; }
+    .contenedor__padre footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .contenedor__padre footer .redes div .redes__texto {
+        font-size: 15px;
+        margin: 0px 10px 27px  0px; }
+    .contenedor__padre footer .copyright {
+      grid-area: copyright;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 20px 0px; }
+      .contenedor__padre footer .copyright .copyright__texto {
+        font-size: 12px; }
   main section div .edicionEncabezados {
     padding: 0px 0px 10px 0px;
     margin: 20px 10px 20px 0px;
@@ -526,10 +591,16 @@ footer {
   main section div div div .iframes {
     display: flex;
     flex-direction: row; }
+  main section div .pagos__encabezado {
+    margin-bottom: 50px; }
+  main section div .icono__palabra {
+    font-size: 16px; }
   footer div div .contacto__texto {
     font-size: 20px;
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px; }
   footer div div .redes__texto {
     font-size: 20px;
     text-align: center;
@@ -540,7 +611,7 @@ footer {
     text-transform: capitalize;
     margin-left: 60px; }
   footer div a .tipografiaLogo {
-    font-size: 35px; }
+    font-size: 30px; }
   footer div .contacto__whatsapp {
     position: fixed;
     left: 1220px;
@@ -549,9 +620,7 @@ footer {
       display: none; }
   footer div .contacto__mail .mailDireccion {
     padding: 20px 0px;
-    font-size: 12px;
-    font-weight: bold;
-    color: black; }
+    font-size: 12px; }
   .footerDesktop {
     display: flex;
     flex-direction: row-reverse; } }
@@ -585,6 +654,38 @@ footer {
     justify-content: center; }
     .contenedor__padre main .main__section1 .section1__h1 {
       font-size: 80px; }
+  .contenedor__padre main .main__section2 .section2__texto {
+    font-size: 30px; }
+  .contenedor__padre main .main__section2 .section2__pregunta {
+    font-size: 35px; }
+  .contenedor__padre main .main__section2 .section2__iconos {
+    display: grid;
+    grid-template-areas: "economico seguimiento flexibilidad adaptabilidad";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .contenedor__padre main .main__section2 .section2__iconos .iconos__edicion {
+      margin: 50px 10px 0px 30px; }
+    .contenedor__padre main .main__section2 .section2__iconos .icono__palabra {
+      margin-left: 30px;
+      padding: 0px 5px 0px 5px;
+      font-size: 18px; }
+    .contenedor__padre main .main__section2 .section2__iconos .icono__texto {
+      margin-left: 5px; }
+  .contenedor__padre main .main__section3 {
+    background-image: url("../assets/img/cuaderno.jpg");
+    width: 100%;
+    height: 700px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main__section3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contenedor__padre main .main__section3 .section3__frase {
+      font-size: 50px;
+      margin-top: 50px; }
   .contenedor__padre footer {
     background-color: #ffffcc;
     grid-area: footer;
@@ -623,38 +724,6 @@ footer {
       margin: 20px 0px; }
       .contenedor__padre footer .copyright .copyright__texto {
         font-size: 12px; }
-  .iconos__edicion {
-    margin: 50px 10px 0px 30px; }
-  .icono__palabra {
-    margin-left: 30px;
-    padding: 0px 5px 0px 5px;
-    font-size: 18px; }
-  .section2__texto {
-    font-size: 30px; }
-  .section2__pregunta {
-    font-size: 35px; }
-  .section2__iconos {
-    display: grid;
-    grid-template-areas: "economico seguimiento flexibilidad adaptabilidad";
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto;
-    justify-items: center; }
-  .icono__texto {
-    margin-left: 5px; }
-  .main__section3 {
-    background-image: url("../assets/img/cuaderno.jpg");
-    width: 100%;
-    height: 700px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-area: main__section3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .section3__frase {
-    font-size: 50px;
-    margin-top: 50px; }
   main section div .edicionEncabezados {
     padding: 0px 0px 10px 0px;
     margin: 20px 10px 20px 0px;

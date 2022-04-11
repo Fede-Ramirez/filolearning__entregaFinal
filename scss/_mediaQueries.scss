@@ -258,78 +258,181 @@ footer{
 
 // Estilos generales
 
-nav {
-	div{
-		.tipografiaLogo{
-			font-size: 35px;
+nav{ // nativo   
+	
+	.logo__filolearning{
+        .logo__anchor{
+           	.tipografiaLogo{
+              font-size: 30px;
+              .logo__nombre{
+                  font-size: 30px;
+                }
+           	}
+        }
+	}
+	ul{
+		li{
+			padding: 10px;
+			.nav__anchor{
+				font-size: 11px;
+			}
 		}
+	}
+}
+
+nav { //bootstrap 
+	div{
 		div{
 			ul{
 				li{
-					padding: 20px;
+					.nav__anchor{
+						font-size: 15px;
+					}
 				}
 			}
 		}
-		
 	}
 }
 
 // Estilo INDEX
 
-@mixin background-images-desktopstyles{
-	width: 100%;
-	height: 650px;
-}
+.contenedor__padre{
+	header{
+        nav{
+	        background-color:#ffffcc;
+	        display: flex;
+	        flex-direction: row;
+	        justify-content: space-between;
+	        align-items: center;
+	        .logo__filolearning{
+	        	.logo__anchor{
+                   .logo{
+	                    margin-left: 5px;
+                    }
+	        	}
+	        }
+	        .header__nav{
+                display: flex;
+	            justify-content: center;
+            }
 
-main{
-	section{
-		.indexImg1{
-           background-image:url("../assets/img/foco_idea.jpg");
-	       background-position: center;
-	       background-repeat: no-repeat;
-	       background-size: cover;
-	       @include background-images-desktopstyles;
-	       .section1__h1{
-	       	   color: beige;
-	           font-size: 95px;
-	           text-shadow: 1px 2px 1px 2px ghostwhite;
-	           text-align: center;
-	       }       
-		}
-		div{
-			.section2__texto{
-				font-size: 30px;
-			}
-			.iconos__edicion{
-				margin: 50px 10px 20px 10px;
-	            width: 150px;
-	            height: 150px;
-			}
-			.icono__palabra{
-				font-size: 18px;
-	            font-weight: bold;
-			}
-			.icono__texto{
-				font-size: 15px;
-				text-align: center;
-			}
-			.section3__frase{
-				color: snow;
-	            text-align: center;
-	            font-size: 45px;
-	            font-weight: bold;
-	            margin-top: 50px;
-	            text-shadow: 1px 2px 1px black;
-			}
-		}
-		.indexImg2{
-			background-image: url("../assets/img/cuaderno.jpg");
+        }
+	}
+	main{
+		.main__section1{
+	        background-image:url("../assets/img/foco_idea.jpg");
+	        background-position: center;
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        width: 100%;
+	        height: 500px;
+	        grid-area: main__section1;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        .section1__h1{
+	            font-size: 60px;
+            }
+        }
+        .main__section2{
+            .section2__texto{
+	            font-size: 20px;
+            }
+            .section2__pregunta{
+	            font-size: 25px;
+            }
+            .section2__iconos{
+	            display: grid;
+	            grid-template-areas: 
+	            "economico seguimiento flexibilidad adaptabilidad";
+	            grid-template-columns: 25% 25% 25% 25%;
+	            grid-template-rows: auto;
+	            justify-items: center;
+	            .iconos__edicion{
+	                margin: 50px 10px 0px 30px;
+	                width: 135px;
+	                height: 135px;
+                }
+                .icono__palabra{
+	                margin-left: 30px;
+	                padding: 0px 5px 0px 5px;
+	                font-size: 16px;
+                }
+                .icono__texto{
+	                margin-left: 5px;
+	                font-size: 13px;
+                }
+            }
+        }
+        .main__section3{
+	        background-image: url("../assets/img/cuaderno.jpg");
+	        width: 100%;
+	        height: 600px;
 	        background-position: top;
 	        background-repeat: no-repeat;
 	        background-size: cover;
-	        @include background-images-desktopstyles;
-		}
+	        grid-area: main__section3;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        .section3__frase{
+	            font-size: 40px;
+	            margin-top: 40px;
+            }
+        }
 	}
+	footer{
+	    background-color:#ffffcc;
+	    grid-area: footer;
+	    display: grid;
+	    grid-template-areas:
+	    "logo__filolearning redes contacto"
+	    "copyright copyright copyright";
+	    grid-template-columns: 33% 33% 33%;
+	    grid-template-rows: auto auto;
+	    .contacto{
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: flex-end;
+	        .contacto__texto{
+	            font-size: 15px;
+            }
+            .contacto__mail{
+	            font-size: 12px;
+	            display: flex;
+	            flex-direction: row;
+            }
+            .contacto__whatsapp{
+	            position: fixed;
+	            bottom: 20px;
+	            right: 0;
+	            .whatsapp{
+	                display: none;
+                }
+            }
+        }
+        .redes{
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: flex-end;
+	        div{
+               .redes__texto{
+	                font-size: 15px;
+	                margin: 0px 10px 27px  0px;
+                }
+	        }
+        }
+        .copyright{
+	        grid-area: copyright;
+	        display: flex;
+	        flex-direction: row;
+	        justify-content: center;
+	        margin: 20px 0px;
+	        .copyright__texto{
+	            font-size: 12px;
+            }
+        }
+    }    
 }
 
 // Estilo ACERCA DE MÍ
@@ -371,6 +474,12 @@ main{
 					}
 				}
 			}
+			.pagos__encabezado{
+                margin-bottom: 50px;
+			}
+		   .icono__palabra{
+			    font-size: 16px;
+		    }
 		}
 	}
 }
@@ -384,6 +493,8 @@ footer{
 				font-size: 20px;
 	            text-align: center;
 	            font-weight: bold;
+	            margin-top: 15px;
+	            margin-bottom: 0px;
 			}
 			.redes__texto{
 				font-size: 20px;
@@ -399,7 +510,7 @@ footer{
 		}
 		a{
 			.tipografiaLogo{
-				font-size: 35px;
+				font-size: 30px;
 			}
 		}
 		.contacto__whatsapp{
@@ -414,8 +525,6 @@ footer{
 			.mailDireccion{
 				padding: 20px 0px;
 	            font-size: 12px;
-	            font-weight: bold;
-	            color: black;
 			}
 		}
 	}
@@ -489,6 +598,49 @@ nav {
 	            font-size: 80px;
             }
         }
+        .main__section2{
+            .section2__texto{
+	            font-size: 30px;
+            }
+            .section2__pregunta{
+	            font-size: 35px;
+            }
+            .section2__iconos{
+	            display: grid;
+	            grid-template-areas: 
+	            "economico seguimiento flexibilidad adaptabilidad";
+	            grid-template-columns: 25% 25% 25% 25%;
+	            grid-template-rows: auto;
+	            justify-items: center;
+	            .iconos__edicion{
+	                margin: 50px 10px 0px 30px;
+                }
+                .icono__palabra{
+	                margin-left: 30px;
+	                padding: 0px 5px 0px 5px;
+	                font-size: 18px;
+                }
+                .icono__texto{
+	                margin-left: 5px;
+                }
+            }
+        }
+        .main__section3{
+	        background-image: url("../assets/img/cuaderno.jpg");
+	        width: 100%;
+	        height: 700px;
+	        background-position: top;
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        grid-area: main__section3;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        .section3__frase{
+	            font-size: 50px;
+	            margin-top: 50px;
+            }
+        }
 	}
 	footer{
 	    background-color:#ffffcc;
@@ -542,55 +694,6 @@ nav {
             }
         }
     }    
-}
-
-.iconos__edicion{
-	margin: 50px 10px 0px 30px;
-}
-
-.icono__palabra{
-	margin-left: 30px;
-	padding: 0px 5px 0px 5px;
-	font-size: 18px;
-}
-
-.section2__texto{
-	font-size: 30px;
-}
-
-.section2__pregunta{
-	font-size: 35px;
-}
-
-.section2__iconos{
-	display: grid;
-	grid-template-areas: 
-	"economico seguimiento flexibilidad adaptabilidad";
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: auto;
-	justify-items: center;
-}
-
-.icono__texto{
-	margin-left: 5px;
-}
-
-.main__section3{
-	background-image: url("../assets/img/cuaderno.jpg");
-	width: 100%;
-	height: 700px;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	grid-area: main__section3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.section3__frase{
-	font-size: 50px;
-	margin-top: 50px;
 }
 
 // Estilo ACERCA DE MÍ
