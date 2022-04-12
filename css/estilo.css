@@ -44,7 +44,8 @@ header {
   header div nav div .tipografiaLogo {
     font-family: "cormorant upright", serif;
     font-style: italic;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-right: 0px; }
     header div nav div .tipografiaLogo:hover {
       text-decoration: none; }
     header div nav div .tipografiaLogo .logo__nombre {
@@ -332,7 +333,8 @@ footer {
         padding: 0px 20px 0px 20px; }
     footer .footer__sections .copyright__texto {
       text-transform: capitalize;
-      font-size: 13px; }
+      font-size: 13px;
+      text-align: center; }
 
 /*Media querie mobile*/
 @media (max-width: 767px) {
@@ -450,7 +452,11 @@ footer {
     width: 100%;
     height: 250px; }
   main section div .icono__palabra {
-    font-size: 17px; }
+    font-size: 17px;
+    margin-bottom: 20px; }
+  main section div .iconos__edicion {
+    height: 100px;
+    height: 100px; }
   /*Estilo footer*/
   footer .footer__sections div .contacto__texto {
     font-size: 15px;
